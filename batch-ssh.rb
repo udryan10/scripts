@@ -9,6 +9,7 @@ user = 'user'
 password = 'password'
 
 command = "ls"
+
 ARGV.each do |a|
   begin
     Net::SSH.start( a, user, :password => password ) do |ssh|
